@@ -2,52 +2,52 @@ import React from 'react';
 import { View, Text, StyleSheet, ScrollView, Image } from 'react-native';
 import DiaryCard from '../components/DiaryCard';
 
-import iconicImage from '../../assets/moods/iconic.jpeg';
-import keluargaImage from '../../assets/moods/keluargacemara.jpeg';
-import oliviaImage from '../../assets/moods/oliviakeindonesia.jpeg';
-import mycanadianman from '../../assets/moods/mycanadianman.jpeg';
-import pusingImage from '../../assets/moods/pusingsemester5.jpeg';
-import russellImage from '../../assets/moods/russellpodium.jpeg';
+import calmImage from '../../assets/moods/calmbroow.jpeg';
+import happyImage from '../../assets/moods/happywawi.jpeg';
+import relaxedImage from '../../assets/moods/relaxedwii.jpeg';
+import AvatarWawi from '../../assets/moods/AvatarWawi.jpeg';
+import tiredImage from '../../assets/moods/tiredwoyy.jpeg';
+import setresImage from '../../assets/moods/setreswawi.jpeg';
 const diaryEntries = [
   {
     id: 1,
-    title: 'malam yang hening',
+    title: 'malam yang dingin',
     date: '2026-09-06',
-    preview: 'Hari ini aku pulang ngampus tengah malam...',
-    moodImage: iconicImage, 
-    moodType: 'tired',
+    preview: 'Hari ini latihan volly beresnya tengah malam banget',
+    moodImage: setresImage, 
+    moodType: 'setres',
   },
   {
     id: 2,
-    title: 'Pagi yang Tenang',
+    title: 'Pagi yang Menyegarkan',
     date: '2025-10-06',
-    preview: 'Hari ini aku bangun lebih pagi dan berjalan kaki 20 menit. Udara terasa sejuk...',
-    moodImage: keluargaImage, 
-    moodType: 'calm',
+    preview: 'Hari ini aku bangun lebih pagi, jogging 20 menit terus lanjut mandi dan siap-siap ngampus',
+    moodImage: happyImage, 
+    moodType: 'happy',
   },
   {
     id: 3,
-    title: 'Senja di Taman',
+    title: 'Sore di Taman',
     date: '2025-10-04',
-    preview: 'Menikmati senja sambil membaca buku favorit. Warna langit sangat indah...',
-    moodImage: oliviaImage, 
+    preview: 'Menikmati waktu sore sambil scroll tiktok di bawah langit jingga',
+    moodImage: relaxedImage, 
     moodType: 'relaxed',
   },
   {
     id: 4,
-    title: 'Koding Sampai Malam',
+    title: 'ngoding sebelum tidur',
     date: '2025-10-03',
-    preview: 'Eksplorasi fitur baru React Native Expo. Walau lelah, aplikasinya berjalan lancar!',
-    moodImage:pusingImage,
-    moodType: 'setres',
+    preview: 'karena tugas yang numpuk, aku terpaksa harus ngoding nyampe tengah malem',
+    moodImage:tiredImage,
+    moodType: 'tired',
   },
   {
     id: 5,
     title: 'Akhir Pekan Santai',
     date: '2025-10-02',
-    preview: 'Menghabiskan waktu bersama keluarga di rumah sambil meminum teh hangat...',
-    moodImage: russellImage,
-    moodType: 'happy',
+    preview: 'Akhirnya minggu ini bisa hangout di luar bareng circle gueh',
+    moodImage: calmImage,
+    moodType: 'calm',
   },
 ];
 
@@ -58,10 +58,10 @@ export default function DiaryListScreen() {
       <View style={styles.headerContainer}>
         <View>
           <Text style={styles.welcomeText}>Selamat Datang di,</Text>
-          <Text style={styles.headerTitle}>Buku Harian Malris</Text>
+          <Text style={styles.headerTitle}>Buku Harian wawii</Text>
         </View>
         <Image
-          source={mycanadianman} // 
+          source={AvatarWawi} // 
           style={styles.mycanadianman}
         />
       </View>

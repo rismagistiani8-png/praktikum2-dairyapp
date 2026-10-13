@@ -4,15 +4,15 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 export default function DiaryCard({ title, date, preview, moodImage, moodType }) {
   const getBorderStyle = () => {
     switch (moodType) {
-      case 'tired':
-        return { borderColor: '#07d3c2', borderWidth: 2 };
       case 'calm':
+        return { borderColor: '#07d3c2', borderWidth: 2 };
+      case 'happy':
         return { borderColor: '#0e6570', borderWidth: 2 };
       case 'relaxed':
         return { borderColor: '#ae9ed4', borderWidth: 2 }; 
-      case 'setres':
+      case 'tired':
         return { borderColor: '#a83c5b', borderWidth: 2 };
-      case 'happy':
+      case 'setres':
         return { borderColor: '#fc0982', borderWidth: 2 }; 
       default:
         return { borderColor: '#4a3504', borderWidth: 1 };
